@@ -11,8 +11,6 @@ $(document).ready(function(){
   $('.store-btn').on('click', function(event){
     let titleValue = $('.input-field-title').val();
     let contentValue = $('.input-field-body').val();
-
-
     localStorage.setItem('titleValue', titleValue);
     localStorage.setItem('contentValue', contentValue);
 
@@ -28,7 +26,15 @@ $(document).ready(function(){
   });
 
   $('.delete-btn').on('click', function(event){
-    console.log(localStorage.removeItem('hrext'));
+    // TODO add in a confirm
+    // throw up .confirm window
+    // capture result
+    // test boolean to delete or not
+    localStorage.removeItem('titleValue');
+    localStorage.removeItem('contentValue');
+    $('.debug').html(`<p>Items deleted</p>`);
+
+
   });
 
 
