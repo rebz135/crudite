@@ -1,5 +1,10 @@
 $(document).ready(function(){
 
+  //to pull up all storage values use
+  // localStorage.length as your array length
+  // localStorage.key(index) to access by number
+  // that returns a list of keys
+
   // attach event listener to buttons(input?)
   // create function stub for read/write/delete
     // research local storage
