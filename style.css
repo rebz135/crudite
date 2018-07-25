@@ -1,3 +1,7 @@
+body {
+    font-family: Helvetica;
+}
+
 .container {
     display:flex;
     justify-content: center;
@@ -16,19 +20,95 @@ button {
 }
 
 button:hover {
-    background-color: dodgerblue;
+    background-color: #fc3b3b;
 }
 
 button:after {
     background-color: red;
 }
 
-.input-field-title {
-
-    text-align: left;
+/*.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 50px;
+    background-color: #ff4747;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -10px;
+    font-size: 20px;
+}*/
+
+.navbar {
+  height: 40px;
+  padding: 10px 18px;
+  background-color: #ff4747;
+  text-align: center;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-top: -10px;
+
 }
 
-.input-field-body {
-    font-size: 25px;
+.logo {
+  height: 30px;
+  font-family: futura;
+  font-size: 20pt;
+  color: white;
+  float: left;
+  text-decoration: none;
+  margin-top: 3px;
+  margin-bottom: auto;
+
+}
+
+.all-btn {
+  height: 30px;
+  font-family: futura;
+  font-size: 12pt;
+  color: white;
+  float: right;
+  text-decoration: none;
+  margin-top: 10px;
+  padding-right: 3px;
+}
+
+.notice-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    background-color: #cdc6c8;
+    margin-left: -10px;
+    margin-right: -10px;
+    font-size: 16px;
+}
+.task-creation {
+    margin-left: 80%;
+    margin-right: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.buttons {
+    display:flex;
+    justify-content: center;
+}
+
+.delete {
+    font-style: italic;
+    text-decoration: underline;
+    text-decoration-color: blue;
+}
+
+.category {
+    font-style: italic;
+    text-decoration: underline;
+    text-decoration-color: blue;
+}
+
+.task-display {
+    text-align: center;
+    margin: 20px 50px;
 }

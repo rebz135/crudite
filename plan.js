@@ -1,3 +1,22 @@
+/* Features:
+√ Add to do and date (Tues)
+√ Remove to do and date (Tues)
+√ Display to do list (Wed)
+Toggle display completed items (Wed)
+
+Things to practice: jquery, storing/retrieving, styling
+
+Additional features if I have extra time:
+√ Add categories of tasks
+√ Filter by categories
+Filter by due date
+
+
+To Do:
+-fix date formatting
+-add checkboxes
+*/
+
 // Project Goals
 
 /*

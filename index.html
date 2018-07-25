@@ -1,12 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My CrUDdy App</title>
-    <!--
-    TODO
-    add link to css
-    add link to our app
-    -->
+    <title>My To Do List</title>
     <script
             src="https://code.jquery.com/jquery-3.3.1.js"
             integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
@@ -16,17 +11,35 @@
 
   </head>
   <body>
+    <div class="navbar">
+        <a href="#" class="logo"> To Do List </a>
+        <a href="#" class="all-btn"> Display All </a>
+    </div>
+    <div class="notice-bar"> Sorry for my appearance! My style hasn't been worked on yet! </div>
     <div class="container">
-
-          <input class="input-field-title" type="text" placeholder="Enter the Title">
-          <textarea class="input-field-body" placeholder="Enter the content"></textarea> <!-- maybe switch to <div id='fake_textarea' contenteditable></div>-->
-          <button class="store-btn">store data</button>
-          <button class="get-btn">get data</button>
-          <button class="delete-btn">delete data</button>
-
-      <div class="item-display">
-
+      <div class="task-creation">
+        <span> Task <input class="task-input" type="text" placeholder="Enter Task"> </span>
+        <form>
+          Category
+          <select name="category">
+            <option value="Work">Work</option>
+            <option value="Health">Health</option>
+            <option value="Growth">Growth</option>
+            <option value="Friends">Friends</option>
+            <option value="Family">Family</option>
+            <option value="Partner">Partner</option>
+            <option value="Others">Others</option>
+          </select>
+        </form>
+        <span> Due Date <input type="date" class="date-input"> </span>
+        <span> Notes <textarea class="notes-input" placeholder="Enter notes"></textarea> </span>
       </div>
+    </div>
+    <div class="buttons">
+      <br>
+      <button class="create-btn">Create Task</button>
+    </div>
+    <div class="task-display">
     </div>
 
   </body>
